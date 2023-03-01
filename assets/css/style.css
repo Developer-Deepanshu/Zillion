@@ -14,7 +14,7 @@
 }
 
 .bg_header {
-    background-image: url('../img/png/header_bg.png');
+    background-image: url('../img/webp/header_bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +98,7 @@ nav ul li a:hover::after {
 }
 
 .bg_img_number {
-    background-image: url('../img/png/number_bg.png');
+    background-image: url('../img/webp/number_bg.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
