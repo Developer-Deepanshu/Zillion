@@ -1,0 +1,548 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/img/svg/logo_arrow.svg" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="bodyTag" class="bg-[#F1F3F6] overflow-hidden">
+    <div class="preloader flex fixed min-h-screen items-center justify-center w-full overflow-hidden">
+        <div class="preloaderImg w-[200px]">
+            <img class="w-full" src="./assets/img/png/logo.png" alt="logo" />
+        </div>
+    </div>
+    <header class="bg_header flex flex-col overflow-hidden xl:min-h-screen">
+        <nav id="NavBar">
+            <div class="container mx-auto mt-10">
+                <div class="flex items-center justify-between">
+                    <a href="" class="inline-block w-[140px] h-[40px]">
+                        <img class="w-full" src="./assets/img/png/logo.png" alt="logo">
+                    </a>
+                    <div class="flex items-center">
+                        <ul id="navBar" class="flex items-center gap-14 nav_bar justify-center flex-col lg:flex-row">
+                            <li>
+                                <a href="#Home"
+                                    class="inline-block ff_popines font-medium text-xl text-white relative decoration-{none} hover:text-white"
+                                    onclick="closeNav()">Home</a></li>
+                            <li>
+                                <a href="#services"
+                                    class="inline-block ff_popines font-medium text-xl text-white relative decoration-{none} hover:text-white"
+                                    onclick="closeNav()">Services</a>
+                            </li>
+                            <li>
+                                <a href="#Investors"
+                                    class="inline-block ff_popines font-medium text-xl text-white relative decoration-{none} hover:text-white"
+                                    onclick="closeNav()">Investors</a>
+                            </li>
+                            <li>
+                                <a href="#AboutUs"
+                                    class="inline-block ff_popines font-medium text-xl text-white relative decoration-{none} hover:text-white"
+                                    onclick="closeNav()">About Us</a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="inline-block contact_us rounded-[27px] py-3 px-9 text-white font-medium sm:hidden hover:text-black hover:bg-white relative decoration-{none} hover:text-white">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                        <a href=""
+                            class="contact_us rounded-[27px] py-3 px-9 text-white xl:ml-24 font-medium hidden sm:inline-block hover:text-black hover:bg-white">Contact
+                            Us</a>
+                        <div class="z-10 lg:hidden" onclick="showNav()" id="nav_button_icon">
+                            <div id="hamburger" onclick="this.classList.toggle('open');">
+                                <svg width="70" height="70" viewBox="0 0 100 100">
+                                    <path class="line line1"
+                                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                    <path class="line line2" d="M 20,50 H 80" />
+                                    <path class="line line3"
+                                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="flex flex-col items-center justify-center flex-grow my-20 sm:my-28" id="Home">
+            <div class="lg:w-2/3 xl:w-2/4 mx-auto flex flex-col justify-center items-center">
+                <h1 class="text-center text-white ff_popines font-medium text-5xl sm:text-6xl sm:leading-[79px]">A
+                    smarter
+                    way to invest
+                    and save for
+                    the
+                    future
+                </h1>
+                <a href="" class="inline-block bg-white font-medium ff_popines text-xl text-center rounded-3xl py-3 px-9 mt-12
+                    know_btn transition-all hover:bg-transparent hover:text-white">Know
+                    More</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Define your home need -->
+        <section
+            class="container mx-auto bg-white mb-16 sm:mb-28 mt-10 xl:mt-0 lg:translate-y-[-25%] xl:translate-y-[-20%] xl:mb-0">
+            <div class="flex items-center justify-center flex-wrap">
+                <div class="px-3 md:w-1/2 lg:w-1/3 translate_img">
+                    <div class="flex flex-col">
+                        <div class="w-[52px] h-[52px] mx-auto mt-8 sm:mt-12">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/define.png" alt="define">
+                        </div>
+                        <p class="text-center font-medium text-3xl ff_popines mt-6 sm:mt-10">Define</p>
+                        <p class="text-center font-normal text-[#515151] mb-5 sm:mb-12 mx-auto w-2/3 mt-5">Define your
+                            home
+                            need.
+                            Zillion
+                            is a
+                            wealth
+                            Container
+                            platform. It lets
+                            you set-up and deploy
+                            complex legal entities such as funds ans SPVs inhours with a few clicks</p>
+                    </div>
+                </div>
+                <div class="px-3 md:w-1/2 lg:w-1/3 translate_img">
+                    <div class="flex flex-col">
+                        <div class="w-[52px] h-[52px] mx-auto mt-8 sm:mt-12">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/Strategy.png" alt="define">
+                        </div>
+                        <p class="text-center font-medium text-3xl ff_popines mt-6 sm:mt-10">Strategy</p>
+                        <p class="text-center font-normal text-[#515151] mb-12 mx-auto w-2/3 mt-5">Define your home
+                            need.
+                            Zillion
+                            is a
+                            wealth
+                            Container
+                            platform. It lets
+                            you set-up and deploy
+                            complex legal entities such as funds ans SPVs inhours with a few clicks</p>
+                    </div>
+                </div>
+                <div class="px-3 md:w-1/2 lg:w-1/3 translate_img">
+                    <div class="flex flex-col">
+                        <div class="w-[52px] h-[52px] mx-auto mt-8 sm:mt-12">
+                            <img class="w-full transition-[3s]" src="./assets/img/png/build.png" alt="define">
+                        </div>
+                        <p class="text-center font-medium text-3xl ff_popines mt-6 sm:mt-10">Build</p>
+                        <p class="text-center font-normal text-[#515151] mb-12 mx-auto w-2/3 mt-5">Define your home
+                            need.
+                            Zillion
+                            is a
+                            wealth
+                            Container
+                            platform. It lets
+                            you set-up and deploy
+                            complex legal entities such as funds ans SPVs inhours with a few clicks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Funds & SPVs made simple -->
+        <section class="container mx-auto" id="services">
+            <div class="flex items-center flex-col-reverse mb-20 lg:flex-row">
+                <div class="lg:w-1/2 px-3 mt-12 lg:mt-0">
+                    <div class="xl:w-2/5 2xl:w-1/3 text-center lg:text-start">
+                        <h2 class="font-semibold ff_popines text-4xl">Funds & SPVs
+                            made simple</h2>
+                    </div>
+                    <p
+                        class="text-[#515151] font-normal ff_popines text-base mt-5 sm:mt-7 mb-12 md:mb-20 text-center lg:text-start">
+                        Zillion is a wealth
+                        Container
+                        platform. It
+                        lets you
+                        set-up and
+                        deploy complex
+                        legal entities
+                        such as Funds and SPVs in hours with a few clicks. From initial structureing to NAV
+                        calculation, it is a fully integrated, one-stop shop platform catering for all your needs.
+                    </p>
+                    <div class="flex items-center justify-between flex-col sm:flex-row">
+                        <div class="flex flex-col">
+                            <div class="flex items-center">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Transactional Banking</p>
+                            </div>
+                            <div class="flex items-centerc mt-8">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Fund & SPV Structuring</p>
+                            </div>
+                            <div class="flex items-centerc mt-8">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Legal Documentation</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-8 sm:mt-0">
+                            <div class="flex items-center  sm:mt-0">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Fund Accounting</p>
+                            </div>
+                            <div class="flex items-center mt-8">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Investors Onboarding</p>
+                            </div>
+                            <div class="flex items-center mt-8">
+                                <div class="w-[30px] h-[30px]">
+                                    <img class="w-full inline-block" src="./assets/img/svg/dunds_arrow.svg" alt="arrow">
+                                </div>
+                                <p class="font-medium text-xl ff_popines ml-7">Online Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/2 px-3">
+                    <img class="w-full" src="./assets/img/png/spv_bulb.png" alt="funds">
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- We believe -->
+        <section class="bg-white" id="Investors">
+            <div class="container mx-auto py-16 sm:pt-24 sm:pb-20">
+                <h2 class="text-center ff_popines font-semibold text-3xl sm:text-4xl mx-auto lg:w-3/5 pb-10 sm:pb-24">
+                    We
+                    believe
+                    that strong
+                    managment
+                    team
+                    is
+                    critical to an
+                    investment’s
+                    success
+                </h2>
+                <div class="flex items-center justify-center lg:justify-between flex-wrap">
+                    <div class="px-3 md:w-1/2 lg:w-1/4 translate_img">
+                        <div class="w-[107px] h-[143px] mx-auto">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/strong.png" alt="strong">
+                        </div>
+                        <p class="text-xl font-semibold ff_popines mt-6 sm:mt-20 mb-5 text-center">Strong Fundamentals
+                        </p>
+                        <p class="ff_popines font-normal text-base text-[#515151] text-center">Focus on bussiness with
+                            strong
+                            fundementals that
+                            trade at
+                            value multiple
+                            where can
+                            drive
+                            risk-return outcomes</p>
+                    </div>
+                    <div class="px-3 mt-6 md:mt-0 md:w-1/2 lg:w-1/4 translate_img">
+                        <div class="w-[183px] h-[111px] mx-auto">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/first_of_capital.png"
+                                alt="first_of_capital">
+                        </div>
+                        <p class="text-xl font-semibold ff_popines mt-6 sm:mt-20 mb-5 text-center">First of Capital
+                            Institutional</p>
+                        <p class="ff_popines font-normal text-base text-[#515151] text-center">Seek out opportunities to
+                            professionalize and institutionalize bussiness with prior owners and managers.</p>
+                    </div>
+                    <div class="px-3 mt-6 lg:mt-0 md:w-1/2 lg:w-1/4 translate_img">
+                        <div class="w-[129px] h-[143px] mx-auto">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/control_oriented.png"
+                                alt="control_oriented">
+                        </div>
+                        <p class="text-xl font-semibold ff_popines mt-6 sm:mt-20 mb-5 text-center">Control Oriented
+                            Investments
+                        </p>
+                        <p class="ff_popines font-normal text-base text-[#515151] text-center">Primarily business
+                            services, niche consumers, andmiche manufacturing sectors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Helping business -->
+        <section class="relative mb-16 lg:mb-36" id="AboutUs">
+            <div class="container mx-auto mt-16 md:mt-28">
+                <div class="flex items-center justify-between flex-col-reverse xl:flex-row">
+                    <div class="lg:w-2/3 xl:w-2/4 px-3 mt-6 sm:mt-10 xl:mt-24">
+                        <h2 class="ff_popines text-3xl font-semibold text-center xl:text-start">Helping business move
+                            the Sponsult
+                            forward</h2>
+                        <p class="ff_popines text-base font-normal mt-7 text-[#515151] text-center xl:text-start">
+                            Zillion is well
+                            positioned to
+                            profitability
+                            investment
+                            your money
+                            and grow
+                            your business. We help
+                            progress the
+                            zillion for our investors and managment team partners by providing middle market companies
+                            with
+                            financial,
+                            operational and strategic resources to create long-term value.</p>
+                    </div>
+                    <div class="xl:w-2/5 px-3">
+                        <div class="xl:absolute right-0 top-0">
+                            <img class="w-full" src="./assets/img/png/helpingBusiness.png" alt="bussiness">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- We take a partnership  -->
+        <section class="relative mb-16 xl:mb-36">
+            <div class="container mx-auto mt-6 xl:mt-16">
+                <div class="flex items-center justify-between flex-col xl:flex-row">
+                    <div class="xl:w-2/5 px-3">
+                        <div class="xl:absolute left-0 top-0">
+                            <img class="w-full" src="./assets/img/png/we_take_Partnership.png" alt="partnership">
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 xl:w-2/4 px-3 mt-6 sm:mt-10 lg:mt-24">
+                        <h2 class="ff_popines text-3xl font-semibold text-center xl:text-start">We take a partnership
+                            approach to backing founders
+                        </h2>
+                        <p class="ff_popines text-base font-normal mt-7 text-[#515151] text-center xl:text-start">Our
+                            20-year track record of
+                            helping talented managers create long-term equity value for business like yours is
+                            distinguished and referenceable. We find value in partnering with seasoned industry
+                            excecutives, and have utilized experts like you throughout our careers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Core ideology fundemamental -->
+        <section class="relative">
+            <div class="container mx-auto mt-16">
+                <div class="flex items-center justify-between flex-col-reverse xl:flex-row">
+                    <div class="lg:w-2/3 xl:w-2/4 px-3 mt-7 sm:mt-10 lg:mt-24">
+                        <h2 class="ff_popines text-3xl font-semibold text-center xl:text-start">Core ideology
+                            fundemamental value & purpose</h2>
+                        <p class="ff_popines text-base font-normal mt-7 text-[#515151] text-center xl:text-start">The
+                            organization’s essential and
+                            enduring tenets a small set of general guiding principles; not to be concluded with specific
+                            cultural or operating practices; not to be compromised for financial gain or short term
+                            expedency. The organization’s fundemental reasons for existence beyond just making money a
+                            perpetual guiding star on horizon; not to be confused with specific goals or business
+                            strategies.</p>
+                    </div>
+                    <div class="xl:w-2/5 px-3">
+                        <div class="xl:absolute right-0 top-0">
+                            <img class="w-full" src="./assets/img/png/core_ideology.png" alt="ideology">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Configurable investment -->
+        <section class="container mx-auto bg-white my-14 lg:my-0 lg:translate-y-[40%]">
+            <div class="mx-auto max-w-sm">
+                <h2 class="ff_popines text-3xl font-semibold pt-24 text-center pb-8 lg:pb-20">Configurable investment
+                    entities
+                </h2>
+            </div>
+            <div class="flex flex-wrap items-center pb-24 flex-col lg:flex-row">
+                <div class="md:w-2/3 lg:w-1/3 mx-auto px-3c h-full translate_img">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="h-[55px] w-[55px]">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/Structure_your_fund.png"
+                                alt="funds">
+                        </div>
+                        <p class="text-center ff_popines font-semibold text-xl mt-9">Structure your fund</p>
+                        <p class="ff_popines font-normal text-base text-center text-[#515151] mt-5">Structure your fund,
+                            tailor your term,
+                            structure
+                            your
+                            share classes,
+                            on-board
+                            and raise
+                            from investors, manage your redemptions, get NAV report- all with clicks.</p>
+                    </div>
+                </div>
+                <div class="md:w-2/3 lg:w-1/3 mx-auto mt-7 lg:mt-0 px-3c h-full translate_img">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="h-[55px] w-[55px]">
+                            <img class="w-full transition-[2s]" src="./assets/img/png/luanch_fund.png" alt="funds">
+                        </div>
+                        <p class="text-center ff_popines font-semibold text-xl mt-9">Launch your hedge fund</p>
+                        <p class="ff_popines font-normal text-base text-center text-[#515151] mt-5">Whether co-investing
+                            in startups, lending money to SMEs or acquiring football clubs, we are the perfect solution
+                            to structure your deal Instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- numbers -->
+        <section class="bg_img_number">
+            <div class="container mx-auto px-3 lg:min-h-[90vh] flex flex-col justify-end py-12">
+                <div class="flex items-center justify-center flex-wrap lg:gap-48 lg:pb-24">
+                    <div class="lg:w-1/6">
+                        <p class="font-semibold ff_popines text-4xl sm:text-6xl text-white text-center">480</p>
+                        <p class="ff_popines font-normal text-xl text-white mt-6 text-center">Wealth Containers running
+                            on ZILLION
+                        </p>
+                    </div>
+                    <div class="lg:w-1/6 mt-12 lg:mt-0 ">
+                        <p class="font-semibold ff_popines text-4xl sm:text-6xl text-white text-center">340</p>
+                        <p class="ff_popines font-normal text-xl text-white mt-6 text-center">Investors on-boarded on
+                            the platform
+                        </p>
+                    </div>
+                    <div class="lg:w-1/6 mt-12 lg:mt-0 md:mx-6 lg:mx-0">
+                        <p class="font-semibold ff_popines text-4xl sm:text-6xl text-white text-center">$16k</p>
+                        <p class="ff_popines font-normal text-xl text-white mt-6 text-center">Invested in Wealth
+                            containers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- We are champion  -->
+        <section class="container mx-auto px-3 py-16 sm:py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="ff_popines font-semibold text-4xl text-center">We are champion who build innovative companies
+                </h2>
+            </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="inline-block ff_popines font-medium text-xl bg-black py-3 px-9 text-white text-center mt-11 rounded-[27px] hover:bg-transparent hover:text-black border-2 transition-all hover:border-black">Contact
+                    Us</a>
+            </div>
+        </section>
+        <button
+            class="fixed backtoTop border_white bg-black w-[50px] h-[50px] rounded-full px-3 pt-3 pb-4 bottom-[5%] right-[2%]"
+            id="back-to-up" onClick="scrollToTop()">
+            <img class="w-full" src="./assets/img/webp/backtopTop.webp" alt="backtopTop" />
+        </button>
+    </main>
+    <!-- footer -->
+    <footer class="bg-black">
+        <div class="container mx-auto px-3">
+            <div class="flex justify-center items-center sm:justify-between sm:items-start flex-col lg:flex-row">
+                <div class=" pt-16 sm:pt-24">
+                    <a href="#NavBar" class="inline-block">
+                        <img class="w-full" src="./assets/img/png/logo.png" alt="logo">
+                    </a>
+                    <div class="flex items-center mt-7 justify-center">
+                        <a href="https://www.facebook.com/" target="_blank"
+                            class="w-[30px] h-[30px] inline-block transition-all hover:translate-y-[-5px]">
+                            <img class="w-full" src="./assets/img/png/Facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="w-[30px] h-[30px] inline-block ml-4 transition-all hover:translate-y-[-5px]">
+                            <img class="w-full" src="./assets/img/png/Instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://in.linkedin.com/" target="_blank"
+                            class="w-[30px] h-[30px] inline-block ml-4 transition-all hover:translate-y-[-5px]">
+                            <img class="w-full" src="./assets/img/png/Linkdin.png" alt="Linkdin">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank"
+                            class="w-[30px] h-[30px] inline-block ml-4 transition-all hover:translate-y-[-5px]">
+                            <img class="w-full" src="./assets/img/png/Twitter.png" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex mt-16 sm:mt-28 mb-20 flex-col sm:flex-row">
+                    <div class="flex flex-col justify-center">
+                        <p class="font-bold text-xl ff_popines text-white text-center sm:text-start">Company</p>
+                        <a href="#terms of service"
+                            class="ff_popines font-medium text-base text-white mt-5 inline-block text-center sm:text-start">Terms
+                            of
+                            service</a>
+                        <a href="#Privacy"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Privacy
+                            policy</a>
+                        <a href="#notice"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Legal
+                            notice</a>
+                        <a href="#about"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">About</a>
+                        <a href="#careers"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Careers</a>
+                    </div>
+                    <div class="flex flex-col justify-center mt-10 sm:ml-28 sm:mt-0">
+                        <p class="font-bold text-xl ff_popines text-white text-center sm:text-start">Resources</p>
+                        <a href="#blog"
+                            class="ff_popines font-medium text-base text-white mt-5 inline-block text-center sm:text-start">Blog</a>
+                        <a href="#zillion connect"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Zillion.
+                            Connect</a>
+                        <a href="#zillion podcast"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Zillion.
+                            Podcast</a>
+                        <a href="#help"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Help
+                            center</a>
+                        <a href="#security"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Security</a>
+                    </div>
+                    <div class="flex flex-col justify-start mt-10 sm:ml-28 sm:mt-0">
+                        <p class="font-bold text-xl ff_popines text-white text-center sm:text-start">Contact</p>
+                        <a href="#contact"
+                            class="ff_popines font-medium text-base text-white mt-5 inline-block text-center sm:text-start">Contact
+                            us</a>
+                        <a href="#support"
+                            class="ff_popines font-medium text-base text-white mt-4 inline-block text-center sm:text-start">Support</a>
+                    </div>
+                </div>
+            </div>
+            <span class="inline-block w-full bg-white h-[2px]"></span>
+            <div class="flex justify-between mt-4 pb-8 sm:pb-16 items-center flex-col sm:flex-row">
+                <p class="text-white font-normal ff_popines text-base">© Zillion. 2022. All rights reserved</p>
+                <p class="ff_popines text-white text-base font-normal mt-5 sm:mt-0">Language & region: <span
+                        class="font-semibold">English (IN)</span></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = () => {
+            toggleTopButton();
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+
+        function toggleTopButton() {
+            if (
+                document.body.scrollTop > 90 ||
+                document.documentElement.scrollTop > 90
+            ) {
+                document.getElementById("back-to-up").classList.remove("hidden");
+            } else {
+                document.getElementById("back-to-up").classList.add("hidden");
+            }
+        }
+        const Nav = document.getElementById("navBar");
+        const Nav_icon = document.getElementById("nav_button_icon");
+        const overflowHidden = document.getElementById("bodyTag");
+
+        function showNav() {
+            Nav.classList.toggle("show_nav");
+            overflowHidden.classList.toggle("overflow-y-hidden");
+        }
+
+        function closeNav() {
+            Nav.classList.remove("show_nav");
+            overflowHidden.classList.remove("overflow-hidden");
+        }
+
+        let preLoader = document.querySelector(".preloader");
+        setTimeout(() => {
+            preLoader.style.visibility = "hidden";
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
+    </script>
+</body>
+
+</html>
